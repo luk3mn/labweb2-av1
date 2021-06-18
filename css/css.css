@@ -34,6 +34,7 @@ form {
 }
 
 .input-group {
+    display: grid;
     margin: 10px 0px 10px 0px;
 }
 
@@ -53,12 +54,27 @@ form {
 }
 
 .btn {
+    width: 105%;
+    margin: .1rem;
     padding: 10px;
-    font-size: 15px;
+    font-size: 17px;
     color: white;
     background: #5F9EA0;
     border: none;
     border-radius: 5px;
+}
+
+
+.btn:nth-child(2) {
+    background: #865fa0;
+}
+
+.btn:nth-child(1):hover {
+    background: #5f88a0;
+}
+
+.btn:nth-child(2):hover {
+    background: #6b5fa0;
 }
 
 .edit_btn {
@@ -97,4 +113,16 @@ form {
     border: 1px solid #763c3c;
     width: 50%;
     text-align: center;
+}
+
+@media screen and (min-width: 522px) {
+    .input-group {
+        display: block;
+    }
+
+    .btn {
+        position: relative;
+        width: 46%;
+        left: 2%;
+    }
 }

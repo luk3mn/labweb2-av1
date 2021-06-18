@@ -1,0 +1,58 @@
+h1, h3 {
+  text-align: center;
+}
+
+.container {
+  padding: 5rem 0;
+}
+
+.box-content {
+  border: 2px dashed #865fa0;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+.btn {
+  display: grid;
+}
+
+.btn a button {
+  padding: .5rem;
+  border: none;
+  border-radius: .3rem;
+  font-size: 14px;
+  font-weight: 700;
+  width: 100%;
+  margin: .2rem 0;
+}
+
+#produtos {
+  background-color: #3a3a3a;
+  color: #fff;
+  cursor: pointer;
+}
+
+#clientes {
+  background-color: #e7e7e7;
+  color: #3a3a3a;
+}
+
+#produtos:hover {
+  background-color: #4e4e4e;
+}
+
+#clientes:hover {
+  background-color: #eeeeee;
+}
+
+@media screen and (min-width: 887px) {
+  .container {
+    padding: 5rem 20%;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+  } 
+}

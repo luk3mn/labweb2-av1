@@ -1,12 +1,7 @@
 <?php
 session_start(); // começa uma sessão
 
-# conecta com o BD
-$server = 'localhost';
-$user = 'root';
-$psw = '';
-$dbase = 'loja';
-$db = mysqli_connect($server, $user, $psw, $dbase);
+include('conexao.php'); // Chama o programa que realiza a conexão com o BD
 
 # inicializa variáveis
 $nome = "";
@@ -84,4 +79,10 @@ if (isset($_GET['del'])) {
   $_SESSION['message'] = "Produto removido!";
   header('location: produtos.php');
 
+}
+
+# Fecha a conexão com o banco de dados
+if (isset($_POST['voltar'])) {
+  mysqli_close($db);
+  header('Location: index.html');
 }

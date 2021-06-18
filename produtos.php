@@ -24,7 +24,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Produtos</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/css.css">
 </head>
 
 <body>
@@ -58,6 +58,7 @@
     <table>
         <thead>
             <tr>
+                <th>ID</th>
                 <th>Nome</th>
                 <th>Descrição</th>
                 <th colspan="2">Ação</th>
@@ -67,6 +68,7 @@
         <!-- Início while -->
         <?php while ($rs = mysqli_fetch_array($results)) { ?> <!-- Fica no loop enquanto houver registro no array -->
             <tr>
+                <th><?php echo $rs['id']; ?></th>
                 <td><?php echo $rs['nome']; ?></td>
                 <td><?php echo $rs['descricao']; ?></td>
                 <td>
@@ -99,6 +101,7 @@
                 <button class="btn" type="submit" name="altera" style="background: #556B2F;">Alterar</button>
             <?php else : ?>
                 <button class="btn" type="submit" name="adiciona">Adicionar</button>
+                <button class="btn" type="submit" name="voltar">Voltar</button>
             <?php endif; ?>
         </div>
     </form>
