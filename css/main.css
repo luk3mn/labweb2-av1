@@ -1,4 +1,13 @@
-h1, h3 {
+body {
+  background-color: #515259;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+}
+
+h3 {
   text-align: center;
 }
 
@@ -7,9 +16,9 @@ h1, h3 {
 }
 
 .box-content {
-  border: 2px dashed #865fa0;
+  border: 2px dashed #A80025;
   padding: 1rem;
-  background-color: #ffffff;
+  background-color: #dddddd;
 }
 
 .btn {
@@ -28,12 +37,12 @@ h1, h3 {
 
 #produtos {
   background-color: #3a3a3a;
-  color: #fff;
+  color: #D9ABA0;
   cursor: pointer;
 }
 
 #clientes {
-  background-color: #e7e7e7;
+  background-color: #D9ABA0;
   color: #3a3a3a;
 }
 
@@ -42,7 +51,7 @@ h1, h3 {
 }
 
 #clientes:hover {
-  background-color: #eeeeee;
+  background-color: rgb(214, 178, 169);
 }
 
 @media screen and (min-width: 887px) {
